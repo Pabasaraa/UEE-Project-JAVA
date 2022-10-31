@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="1dp"
+    android:backgroundTint="@color/light_gray"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="15dp"
+    app:strokeColor="@null"
+    app:strokeWidth="4dp">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="What are the common uses of solar energy?"
+        android:textSize="16sp"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/article_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Solar energy is commonly used for solar water heaters and house heating. The heat from solar ponds enables the production of chemicals, food, textiles, warm greenhouses, swimming pools, and livestock buildings. Cooking and providing a power source for electronic devices ..."
+        android:textSize="14sp"
+        android:justificationMode="inter_word"
+        android:textColor="#B3606060"
+        android:textStyle="bold"
+        tools:targetApi="o" />
+
+    <LinearLayout
+        android:id="@+id/article_read_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="right|bottom"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Read More"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#2979D2"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/next_arrow"
+            app:tint="#2979D2"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
