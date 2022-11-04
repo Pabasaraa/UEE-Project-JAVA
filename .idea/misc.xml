@@ -4,21 +4,34 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.309" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/article_menu_icons.xml" value="0.276" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/bg_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/circle_bg.xml" value="0.276" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/circle_bg_thicc.xml" value="0.276" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/home_selector.xml" value="0.19" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.309" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/img_radius.xml" value="0.276" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/item_tint.xml" value="0.132" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/learn_more_btn_bg.xml" value="0.276" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/rect_button.xml" value="0.3575" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/round_button.xml" value="0.3575" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/save_icon.xml" value="0.1385" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/search_bg.xml" value="0.309" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout-v28/activity_article_desc.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout-v28/article_card_view.xml" value="0.365625" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_article_desc.xml" value="0.33" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_on_boarding_screen1.xml" value="0.33" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_on_boarding_screen2.xml" value="0.25" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_on_boarding_screen3.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/article_card_view.xml" value="0.33" />
-        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_article.xml" value="0.25" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_article.xml" value="0.33" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_home.xml" value="0.23026315789473684" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_profile.xml" value="0.3087719298245614" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_store.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/menu/menu_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/menu/pop_up_menu.xml" value="0.3087719298245614" />
       </map>
     </option>
   </component>
