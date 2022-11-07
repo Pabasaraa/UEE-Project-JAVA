@@ -9,18 +9,37 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ArticleDescActivity extends AppCompatActivity {
 
-    LinearLayout optionBtn;
+    LinearLayout optionBtn, heartBtn;
+    TextView title, description, author;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_article_desc );
+        
+        Bundle bundle = getIntent ().getExtras ();
 
         optionBtn = findViewById( R.id.article_desc_option_btn );
+        heartBtn = findViewById( R.id.article_desc_like_btn );
+        title = findViewById( R.id.article_desc_title );
+        description = findViewById( R.id.article_desc_desc );
+        author = findViewById( R.id.article_desc_author );
+        
+        title.setText ( bundle.getString ( "Title" ) );
+        description.setText ( bundle.getString ( "Desc" ) );
+        author.setText ( bundle.getString ( "Author" ) );
+        
+        heartBtn.setOnClickListener ( new View.OnClickListener ( ) {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText ( ArticleDescActivity.this , "Added to favourite" , Toast.LENGTH_SHORT ).show ( );
+            }
+        } );
 
         optionBtn.setOnClickListener( new View.OnClickListener() {
             @Override
