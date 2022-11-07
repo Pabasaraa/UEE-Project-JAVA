@@ -74,6 +74,12 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         return list.size();
     }
 
+    @SuppressLint("NotifyDataSetChanged")
+    public void showFilteredArticles (ArrayList<ArticleHelperClass> filteredList) {
+        this.list = filteredList;
+        notifyDataSetChanged();
+    }
+
     public static class ArticleViewHolder extends  RecyclerView.ViewHolder {
         TextView title, description, author;
         LinearLayoutCompat learnMoreBtn;

@@ -8,9 +8,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,6 +29,20 @@ public class ArticleFragment extends Fragment {
     RecyclerView recyclerView;
     ArticleAdapter articleAdapter;
     ArrayList<ArticleHelperClass> list;
+    EditText searchField;
+
+
+    private void filterArticles (String searchTerm) {
+        ArrayList<ArticleHelperClass> filteredArticles = new ArrayList<> ();
+
+        for (ArticleHelperClass filteredArticle : list) {
+            if (filteredArticle.getTitle().toLowerCase().contains( searchTerm.toLowerCase() )) {
+                filteredArticles.add( filteredArticle );
+            }
+        }
+
+        articleAdapter.showFilteredArticles( filteredArticles );
+    }
 
     public ArticleFragment() {}
 
@@ -37,6 +54,7 @@ public class ArticleFragment extends Fragment {
 
         databaseReference = FirebaseDatabase.getInstance ( "https://uee-project-1c21d-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference ( "Articles" );
 
+        searchField = v.findViewById ( R.id.search_field );
         recyclerView = v.findViewById ( R.id.article_recyclerView );
         recyclerView.setHasFixedSize ( true );
         recyclerView.setLayoutManager ( new LinearLayoutManager ( getActivity () ) );
@@ -44,6 +62,19 @@ public class ArticleFragment extends Fragment {
         list = new ArrayList<> ();
         articleAdapter = new ArticleAdapter ( getActivity (), list );
         recyclerView.setAdapter ( articleAdapter );
+
+        searchField.addTextChangedListener ( new TextWatcher ( ) {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence , int i , int i1 , int i2) {}
+
+            @Override
+            public void onTextChanged(CharSequence charSequence , int i , int i1 , int i2) {}
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                filterArticles(editable.toString ());
+            }
+        } );
 
         databaseReference.addValueEventListener ( new ValueEventListener ( ) {
             @SuppressLint("NotifyDataSetChanged")

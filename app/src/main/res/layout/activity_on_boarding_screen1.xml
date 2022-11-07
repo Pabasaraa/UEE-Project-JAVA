@@ -11,6 +11,7 @@
         android:id="@+id/skip_btn_s1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:transitionName="skip_btn"
         android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent">
@@ -52,6 +53,7 @@
             android:id="@+id/imageView"
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:transitionName="big_img"
             android:src="@drawable/construction_img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Initial Site Visit &amp; Consultation"
+            android:transitionName="title_txt"
             android:textColor="#303030"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -79,6 +82,7 @@
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
             android:text="qualified team will perform an inspection of your property, complete an engineering assessment, and consult with you to determine the best solar power system for your property."
+            android:transitionName="slogan_txt"
             android:textColor="#6B6969"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -94,6 +98,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/round_button"
+            android:transitionName="next_btn"
             android:padding="12dp"
             android:scaleType="centerInside"
             android:src="@drawable/next_arrow"
@@ -102,6 +107,51 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/page_indicator1_s1"
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:transitionName="page_indicator1"
+            android:background="@drawable/on_boarding_curr_page_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/page_indicator2_s1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="5dp"
+            android:transitionName="page_indicator2"
+            android:background="@drawable/on_boarding_page_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/page_indicator3_s1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="5dp"
+            android:transitionName="page_indicator3"
+            android:background="@drawable/on_boarding_page_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

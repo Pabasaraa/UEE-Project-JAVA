@@ -11,6 +11,7 @@
         android:id="@+id/skip_btn_s3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:transitionName="skip_btn"
         android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent">
@@ -52,6 +53,7 @@
             android:id="@+id/imageView"
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:transitionName="big_img"
             android:src="@drawable/installation_img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Installation &amp; commissioning"
+            android:transitionName="title_txt"
             android:textColor="#303030"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -80,6 +83,7 @@
             android:paddingEnd="25dp"
             android:text="System installation begins with installing solar panels on the roof including solar power optimizers and attaching panels."
             android:textColor="#6B6969"
+            android:transitionName="slogan_txt"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +98,7 @@
             android:layout_height="45dp"
             android:layout_marginTop="50dp"
             android:background="@drawable/rect_button"
+            android:transitionName="next_btn"
             android:text="Let's Go"
             android:textColor="#60CF7C"
             android:textSize="14sp"
@@ -104,5 +109,48 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/page_indicator1_s3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:transitionName="page_indicator1"
+            android:background="@drawable/on_boarding_page_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/page_indicator2_s3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="5dp"
+            android:transitionName="page_indicator2"
+            android:background="@drawable/on_boarding_page_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/page_indicator3_s3"
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="5dp"
+            android:transitionName="page_indicator3"
+            android:background="@drawable/on_boarding_curr_page_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
