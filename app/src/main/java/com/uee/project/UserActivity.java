@@ -1,7 +1,10 @@
 package com.uee.project;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -39,12 +42,9 @@ public class UserActivity extends AppCompatActivity {
 
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-//
-
-
-            }
+            public void onClick(View view) {onBackPressed();}
         });
+
 
     }
 }

@@ -23,9 +23,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
             android:text="Feedback"
             android:textColor="@color/black"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/imageView7"
             app:layout_constraintStart_toStartOf="@+id/guideline21"
@@ -70,12 +71,13 @@
             app:layout_constraintStart_toStartOf="@+id/guideline16"
             app:layout_constraintTop_toTopOf="@+id/guideline20" />
 
-        <EditText
+        <TextView
             android:id="@+id/question_title_add"
-            android:layout_width="247dp"
-            android:layout_height="114dp"
+            android:layout_width="255dp"
+            android:layout_height="117dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/poppins"
             android:gravity="start"
             android:minWidth="10dp"
             android:minHeight="48dp"
@@ -94,21 +96,35 @@
             android:layout_gravity="center"
             android:layout_marginTop="55dp"
             android:rating="3"
+         android:theme="@style/MyRatingBar"
             app:layout_constraintEnd_toEndOf="@+id/question_title_add"
             app:layout_constraintStart_toStartOf="@+id/question_title_add"
-            app:layout_constraintTop_toTopOf="@+id/question_title_add" />
+            app:layout_constraintTop_toTopOf="@+id/question_title_add"
+            />
+
+
+        
+<!--        <ToggleButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textOn=""-->
+<!--            android:textOff=""-->
+<!--            android:drawableTop="@drawable/btnselector"-->
+<!--           -->
+<!--            />-->
 
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="246dp"
-            android:layout_height="92dp"
+            android:layout_width="255dp"
+            android:layout_height="98dp"
             android:layout_marginTop="28dp"
             android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/poppins"
             android:gravity="start"
             android:maxLines="2"
             android:minHeight="48dp"
             android:padding="12dp"
-            android:text="Would you recommend this application ta a friend?"
+            android:hint="Would you recommend this application to a friend? (Yes/No)"
             android:textColor="#5A607F"
             android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline25"
@@ -117,17 +133,18 @@
 
         <EditText
             android:id="@+id/editTextTextPersonName4"
-            android:layout_width="252dp"
+            android:layout_width="255dp"
             android:layout_height="112dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/edit_text_bg"
+            android:fontFamily="@font/poppins"
             android:gravity="start"
             android:hint="What could we improve on?"
             android:maxLines="10"
             android:minHeight="110dp"
             android:padding="12dp"
             android:textColor="#5A607F"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline25"
             app:layout_constraintStart_toStartOf="@+id/guideline19"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
@@ -137,16 +154,14 @@
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginTop="24dp"
-
             android:background="@drawable/btn_bg"
-            android:text="add"
+            android:text="Publish"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintHorizontal_bias="0.0"
-
             app:layout_constraintStart_toStartOf="@+id/guideline7"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
             tools:ignore="MissingConstraints" />
