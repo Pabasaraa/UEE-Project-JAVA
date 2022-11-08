@@ -22,7 +22,14 @@
 
     <style name="MyRatingBar" parent  = "Widget.AppCompat.RatingBar">
         <item name="colorControlNormal">#4D000000</item>
-
         <item name="colorControlActivated">#FFBF00</item>
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="dividerHorizontal">@color/teal_200</item>
+        <item name="divider">@color/black</item>
+        <item name="dividerColor">@color/black</item>
     </style>
 </resources>

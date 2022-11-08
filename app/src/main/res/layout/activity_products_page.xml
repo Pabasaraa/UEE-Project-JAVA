@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Products_page"
+
+    >
+
+    <include
+        android:id="@+id/include5"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+
+        android:id="@+id/imgBtn1"
+        android:layout_width="60dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        app:srcCompat="@drawable/solarpannel_sithum" />
+
+    <ImageButton
+
+        android:id="@+id/imgBtn2"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        app:srcCompat="@drawable/battery" />
+
+    <ImageButton
+
+        android:id="@+id/imgBtn3"
+        android:layout_width="87dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtn"
+        app:layout_constraintStart_toEndOf="@+id/imgBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        app:srcCompat="@drawable/inventer" />
+
+    <ImageButton
+
+        android:id="@+id/imgBtn"
+        android:layout_width="87dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        app:srcCompat="@drawable/soloa" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Pannels"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="Batterys"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Inventers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn3" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="247dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Enter products"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
