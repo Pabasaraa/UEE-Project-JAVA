@@ -48,4 +48,6 @@ dependencies {
     //custom dependencies
     def lottieVersion = "5.2.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+    //round photo dependency
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

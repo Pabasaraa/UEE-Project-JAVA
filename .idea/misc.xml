@@ -8,6 +8,7 @@
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/bg_rounded.xml" value="0.1" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/circle_bg.xml" value="0.276" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/circle_bg_thicc.xml" value="0.276" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/featured_brands_card.xml" value="0.2685" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/home_selector.xml" value="0.19" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.309" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/drawable/img_radius.xml" value="0.276" />
@@ -28,8 +29,9 @@
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_on_boarding_screen3.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/article_card_view.xml" value="0.33" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/featured_brands_card.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_article.xml" value="0.33" />
-        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_home.xml" value="0.23026315789473684" />
+        <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_profile.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/layout/fragment_store.xml" value="0.3087719298245614" />
         <entry key="..\:/Users/pabas/AndroidStudioProjects/UEE_Project/app/src/main/res/menu/menu_bottom.xml" value="0.1" />

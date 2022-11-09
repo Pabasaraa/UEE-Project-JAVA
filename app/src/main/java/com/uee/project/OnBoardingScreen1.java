@@ -51,6 +51,7 @@ public class OnBoardingScreen1 extends AppCompatActivity {
                 Intent intent = new Intent( getApplicationContext(), OnBoardingScreen2.class );
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation ( OnBoardingScreen1.this, pairs );
                 startActivity ( intent, options.toBundle() );
+                finish ();
             }
         } );
 
