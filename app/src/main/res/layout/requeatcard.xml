@@ -29,8 +29,8 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:text="Add a JSON Object in a POST request"
-            android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textColor="#CC000000"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
 
@@ -54,31 +54,24 @@
             android:layout_marginTop="15dp"
             android:padding="5dp">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/update_btn_manageQue"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginEnd="10dp"
-                android:layout_weight="1"
                 android:background="@drawable/cardbtn"
-                android:minWidth="0dp"
-                android:minHeight="0dp"
                 android:text="UPDATE"
-                android:textAllCaps="false"
                 android:textColor="#2760A1"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/delete_btn_manageQue"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
-                android:layout_weight="1"
                 android:background="@drawable/cardbtn"
-                android:minWidth="0dp"
-                android:minHeight="0dp"
                 android:text="DELETE"
                 android:textAllCaps="false"
                 android:textColor="#F50E0E"
